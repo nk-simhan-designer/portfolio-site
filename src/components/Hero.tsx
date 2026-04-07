@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import selfImg from "./self.png";
 
 export const Hero = ({ onExplore, onHire }: { onExplore: () => void, onHire: () => void }) => {
   return (
@@ -51,8 +52,7 @@ export const Hero = ({ onExplore, onHire }: { onExplore: () => void, onHire: () 
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary to-brand-secondary rounded-[4rem] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
               <div className="relative glass rounded-[4rem] p-4 border-white/20 overflow-hidden">
-                <img
-                  src="self.png"
+                <img src={selfImg}
                   alt="Frontend Developer Profile"
                   className="rounded-[3rem] object-cover w-full aspect-[4/5] grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
                   referrerPolicy="no-referrer"
